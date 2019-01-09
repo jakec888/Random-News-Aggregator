@@ -1,12 +1,14 @@
-/* body {
-   display: grid;
-   grid-template-columns: auto auto auto;
-} */
+@import url("https://fonts.googleapis.com/css?family=News+Cycle");
+
+body {
+   font-family: "News Cycle", sans-serif;
+   padding: 5px;
+}
 
 nav {
    background-color: grey;
    height: auto;
-   min-height: 125px;
+   /* min-height: 125px; */
 }
 
 main {
@@ -21,17 +23,65 @@ footer {
    min-height: 125px;
 }
 
+h1 {
+   font-weight: 900;
+   font-size: xx-large;
+   margin: 0px;
+}
+
+.logo-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.nav-menu {
+   display: flex;
+   justify-content: space-around;
+   padding: 5px;
+}
+
+.nav-menu > a {
+   border: 1px solid black;
+   text-decoration: none;
+}
+
+.nav-menu > a:hover {
+   color: white;
+}
+
 .article-container {
    display: grid;
-   grid-template-columns: auto auto auto auto auto;
+   grid-template-columns: auto auto auto auto auto auto;
    grid-gap: 5px;
 }
 
 .article-container > div {
+   border: 1px solid black;
    background-color: blue;
-   min-height: 100px;
+   height: 300px;
 }
 
 .article-container > div:nth-child(even) {
+   /* border: 1px solid black; */
    background-color: blueviolet;
+   /* height: 200px; */
+   /* margin-top: 100px; */
 }
+
+.article-container > div:nth-child(odd) {
+   /* border: 1px solid black; */
+   background-color: blue;
+   /* height: 200px; */
+   /* margin-bottom: 100px; */
+}
+
+/* 
+.article-content {
+   background-color: rgb(64, 64, 238);
+   height: 200px;
+}
+
+.article-content:nth-child(even) {
+   background-color: blueviolet;
+} */
