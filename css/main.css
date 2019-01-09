@@ -1,0 +1,37 @@
+/* body {
+   display: grid;
+   grid-template-columns: auto auto auto;
+} */
+
+nav {
+   background-color: grey;
+   height: auto;
+   min-height: 125px;
+}
+
+main {
+   background-color: grey;
+   height: auto;
+   min-height: 125px;
+}
+
+footer {
+   background-color: grey;
+   height: auto;
+   min-height: 125px;
+}
+
+.article-container {
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   grid-gap: 5px;
+}
+
+.article-container > div {
+   background-color: blue;
+   min-height: 100px;
+}
+
+.article-container > div:nth-child(even) {
+   background-color: blueviolet;
+}
