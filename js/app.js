@@ -20,12 +20,19 @@ $(() => {
       url:
          "https://newsapi.org/v2/top-headlines?country=us&apiKey=773d961a799d4cf9a09c2033e653e8b1",
       success: data => {
-         console.log(data);
+         // console.log(data);
+
+         // $(".jdata")
+         //    .removeData("example")
+         //    .data("example", data.articles[i]);
 
          for (let i = 0; i < 13; i++) {
+            // console.log(data.articles[i]);
+
             if (i === 0) {
                $(".trending-articles").append(
                   $("<div>")
+                     .data("example", data.articles[i])
                      .css("width", "100%")
                      .css("height", "100%")
                      .addClass("trending-feature")
@@ -59,6 +66,7 @@ $(() => {
             } else {
                $(".trending-articles").append(
                   $("<div>")
+                     .data(data.articles[i])
                      .css("width", "100%")
                      .addClass("article")
                      // .css("height", "100%")
@@ -99,9 +107,9 @@ $(() => {
 
          const readArticle = event => {
             event.preventDefault();
-            console.log("Article Clicked!");
-            console.log(event.currentTarget);
-            // console.log(event.data.value);
+            // console.log("Article Clicked!");
+
+            console.log($(event.currentTarget).data("example").description);
          };
          $(".article").on("click", readArticle);
       },
@@ -123,3 +131,7 @@ $(() => {
 //          )
 //    )
 // )
+
+// How to transfer data and/or how to extract data using jquery?
+// Pass that data to a modal?
+// Why does readArticle function have to be w/i the ajax request to work?
