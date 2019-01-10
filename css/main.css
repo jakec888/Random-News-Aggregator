@@ -62,6 +62,7 @@ h5 {
 .trending-description p {
    margin: 0;
 }
+
 .trending-articles {
    border: 1px solid violet;
    margin-bottom: 10px;
@@ -70,11 +71,12 @@ h5 {
    grid-gap: 10px;
 }
 
-.trending-articles div {
+.trending-articles > div {
    background-color: white;
-   height: minmax(250px, auto);
+   height: 250px;
 }
-.trending-articles div:nth-child(even) {
+
+.trending-articles > div:nth-child(even) {
    background-color: blueviolet;
    height: 250px;
 }
