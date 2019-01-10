@@ -33,11 +33,57 @@ h5 {
    margin: 0;
 }
 
+h5 {
+   font-size: 10px;
+}
+
+p {
+   margin: 0;
+}
+
+.content-container {
+   background-color: aqua;
+   width: 80%;
+   margin: auto;
+}
+
+.content-container > img {
+   width: 100%;
+   height: 85%;
+}
+
+.content-container > .content-src {
+   width: 100%;
+   height: auto;
+   font-size: 10px;
+}
+
+.content-container > .content-title {
+   text-align: center;
+   padding: 10px 0 10px 0;
+}
+
+.content-container > .content-article {
+   width: 80%;
+   padding: 10px 0 30px 0;
+   margin: auto;
+   height: auto;
+}
+
+.content-container > div {
+   margin: auto;
+   text-align: center;
+}
+
+.content-link {
+   text-decoration: none;
+}
+
 .modal {
    display: none;
    position: fixed;
    z-index: 1;
-   padding-top: 5%;
+   padding-top: 10px;
    left: 0;
    top: 0;
    width: 100%;
@@ -46,26 +92,27 @@ h5 {
 }
 
 .modalContent {
-   background-color: white;
+   /* background-color: white; */
+   background-color: green;
    margin: auto;
    padding: 15px;
    width: 80%;
-   height: 80%;
+   height: 90%;
 
    overflow-y: scroll;
    position: relative;
 }
 
 .closeModal {
+   position: fixed;
    color: #aaaaaa;
-   float: right;
    font-size: 28px;
    font-weight: bold;
 }
 
 .closeModal:hover,
 .closeModal:focus {
-   color: #000;
+   color: red;
    text-decoration: none;
    cursor: pointer;
 }
@@ -150,6 +197,7 @@ h5 {
 
 .business-description p {
    margin: 0;
+   padding: 0;
 }
 .business-articles {
    border: 1px solid violet;

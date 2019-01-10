@@ -1,15 +1,10 @@
 $(() => {
    // API KEY: 773d961a799d4cf9a09c2033e653e8b1
 
-   // const readArticle = () => {
-   //    console.log("Article Clicked!");
-   // };
-   // $(".article").on("click", readArticle);
-
    const showModal = () => {
       $("#mainModal").css("display", "block");
    };
-   $("#myBtn").on("click", showModal);
+   // $("#myBtn").on("click", showModal);
 
    const hideModal = () => {
       $("#mainModal").css("display", "none");
@@ -23,16 +18,16 @@ $(() => {
          // console.log(data);
 
          // $(".jdata")
-         //    .removeData("example")
-         //    .data("example", data.articles[i]);
+         //    .removeData("article-data")
+         //    .data("article-data", data.articles[i]);
 
          for (let i = 0; i < 13; i++) {
-            // console.log(data.articles[i]);
+            console.log(data.articles[i]);
 
             if (i === 0) {
                $(".trending-articles").append(
                   $("<div>")
-                     .data("example", data.articles[i])
+                     .data("article-data", data.articles[i])
                      .css("width", "100%")
                      .css("height", "100%")
                      .addClass("trending-feature")
@@ -42,7 +37,6 @@ $(() => {
                            .attr("src", data.articles[i].urlToImage)
                            .css("width", "100%")
                            .css("height", "75%")
-                        // .css("border", "1px solid black")
                      )
                      .append(
                         $("<div>")
@@ -51,12 +45,13 @@ $(() => {
                            // .css("border", "1px solid black")
                            // .css("padding", "10px")
                            .append(
-                              $("<h5>").text("source: " + data.articles[i].source.name)
+                              $("<h5>")
+                                 .text("source: " + data.articles[i].source.name)
+                                 .css("padding-bottom", "5px")
                            )
                            .append(
                               $("<h4>")
                                  .text(data.articles[i].title)
-                                 .css("top", "10%")
                                  .css("text-align", "center")
                                  .css("position", "relative")
                            )
@@ -66,22 +61,19 @@ $(() => {
             } else {
                $(".trending-articles").append(
                   $("<div>")
-                     .data(data.articles[i])
+                     .data("article-data", data.articles[i])
                      .css("width", "100%")
                      .addClass("article")
-                     // .css("height", "100%")
                      .append(
                         $("<img>")
                            .attr("src", data.articles[i].urlToImage)
                            .css("width", "100%")
                            .css("height", "50%")
-                        // .css("border", "1px solid black")
                      )
                      .append(
                         $("<div>")
                            .css("width", "100%")
                            .css("height", "50%")
-                           // .css("border", "1px solid black")
                            .append(
                               $("<h5>").text("SOURCE: " + data.articles[i].source.name)
                            )
@@ -93,7 +85,6 @@ $(() => {
                                  .css("text-align", "center")
                                  .css("position", "relative")
                            )
-                        // .append($("<p>").text(data.articles[i].description))
                      )
                );
             }
@@ -109,7 +100,31 @@ $(() => {
             event.preventDefault();
             // console.log("Article Clicked!");
 
-            console.log($(event.currentTarget).data("example").description);
+            console.log($(event.currentTarget).data("article-data"));
+
+            const articleImg = $(event.currentTarget).data("article-data").urlToImage;
+            const articleSrc = $(event.currentTarget).data("article-data").source.name;
+            const articleTitle = $(event.currentTarget).data("article-data").title;
+            const articleContent = $(event.currentTarget).data("article-data").content;
+            const articleLink = $(event.currentTarget).data("article-data").url;
+            // Img
+            $(".content-img").attr("src", articleImg);
+
+            // source
+            $(".content-src").text(articleSrc);
+
+            // title
+            $(".content-title").text(articleTitle);
+
+            // article
+            $(".content-article").text(articleContent);
+
+            // link
+
+            $(".content-link")
+               .attr("href", articleLink)
+               .attr("target", "_blank");
+            showModal();
          };
          $(".article").on("click", readArticle);
       },
@@ -118,20 +133,3 @@ $(() => {
       }
    });
 });
-
-// .append(
-//    $("<div>").append(
-//       $("<h4>")
-//          .text(data.articles[i].title)
-//          .addClass("tooltip")
-//          .append(
-//             "<span>"
-//                .text(data.articles[i].description)
-//                .addClass("tooltiptext")
-//          )
-//    )
-// )
-
-// How to transfer data and/or how to extract data using jquery?
-// Pass that data to a modal?
-// Why does readArticle function have to be w/i the ajax request to work?
