@@ -1,8 +1,12 @@
 $(() => {
    // API KEY: 773d961a799d4cf9a09c2033e653e8b1
 
+   // const readArticle = () => {
+   //    console.log("Article Clicked!");
+   // };
+   // $(".article").on("click", readArticle);
+
    const showModal = () => {
-      console.log("Clicked Button!");
       $("#mainModal").css("display", "block");
    };
    $("#myBtn").on("click", showModal);
@@ -25,6 +29,7 @@ $(() => {
                      .css("width", "100%")
                      .css("height", "100%")
                      .addClass("trending-feature")
+                     .addClass("article")
                      .append(
                         $("<img>")
                            .attr("src", data.articles[i].urlToImage)
@@ -55,6 +60,7 @@ $(() => {
                $(".trending-articles").append(
                   $("<div>")
                      .css("width", "100%")
+                     .addClass("article")
                      // .css("height", "100%")
                      .append(
                         $("<img>")
@@ -83,7 +89,6 @@ $(() => {
                      )
                );
             }
-
             // $(".trending-articles").append();
             // Div Container: $("<div>").append() // .addClass()
             // Image: $("<img>").text(data.articles[i].urlToImage)
@@ -91,6 +96,14 @@ $(() => {
             // Source: $("<h5>").text("source: " + data.articles[i].source.name)
             // Description $("<p>").text(data.articles[i].description)
          }
+
+         const readArticle = event => {
+            event.preventDefault();
+            console.log("Article Clicked!");
+            console.log(event.currentTarget);
+            // console.log(event.data.value);
+         };
+         $(".article").on("click", readArticle);
       },
       error: e => {
          console.log("Error: " + e);
