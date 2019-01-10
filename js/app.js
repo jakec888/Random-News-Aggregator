@@ -1,6 +1,17 @@
 $(() => {
    // API KEY: 773d961a799d4cf9a09c2033e653e8b1
 
+   const showModal = () => {
+      console.log("Clicked Button!");
+      $("#mainModal").css("display", "block");
+   };
+   $("#myBtn").on("click", showModal);
+
+   const hideModal = () => {
+      $("#mainModal").css("display", "none");
+   };
+   $(".closeModal").on("click", hideModal);
+
    $.ajax({
       url:
          "https://newsapi.org/v2/top-headlines?country=us&apiKey=773d961a799d4cf9a09c2033e653e8b1",
@@ -30,8 +41,14 @@ $(() => {
                            .append(
                               $("<h5>").text("source: " + data.articles[i].source.name)
                            )
-                           .append($("<h4>").text(data.articles[i].title))
-                           .append($("<p>").text(data.articles[i].description + " ..."))
+                           .append(
+                              $("<h4>")
+                                 .text(data.articles[i].title)
+                                 .css("top", "10%")
+                                 .css("text-align", "center")
+                                 .css("position", "relative")
+                           )
+                           .append($("<p>").text(data.articles[i].description))
                      )
                );
             } else {
@@ -54,7 +71,14 @@ $(() => {
                            .append(
                               $("<h5>").text("SOURCE: " + data.articles[i].source.name)
                            )
-                           .append($("<h4>").text(data.articles[i].title))
+                           .append(
+                              $("<h4>")
+                                 .text(data.articles[i].title)
+                                 .css("height", "100%")
+                                 .css("top", "15%")
+                                 .css("text-align", "center")
+                                 .css("position", "relative")
+                           )
                         // .append($("<p>").text(data.articles[i].description))
                      )
                );
@@ -73,3 +97,16 @@ $(() => {
       }
    });
 });
+
+// .append(
+//    $("<div>").append(
+//       $("<h4>")
+//          .text(data.articles[i].title)
+//          .addClass("tooltip")
+//          .append(
+//             "<span>"
+//                .text(data.articles[i].description)
+//                .addClass("tooltiptext")
+//          )
+//    )
+// )
