@@ -8,11 +8,12 @@ font-family: 'Great Vibes', cursive;
 body {
    margin: 0;
    font-family: "Roboto", sans-serif;
+   background-color: #728ba8;
 }
 
 main {
-   background-color: grey;
-   border: 3px solid blueviolet;
+   /* background-color: grey; */
+   /* border: 3px solid blueviolet; */
    width: 80%;
    margin: auto;
 }
@@ -21,6 +22,7 @@ h1.logo {
    /* border: 1px solid black; */
    font-family: "Great Vibes", cursive;
    font-weight: 900;
+   font-size: 100;
    text-align: center;
    margin: 10px;
 }
@@ -42,7 +44,6 @@ p {
 }
 
 .content-container {
-   background-color: aqua;
    width: 80%;
    margin: auto;
 }
@@ -50,6 +51,8 @@ p {
 .content-container > img {
    width: 100%;
    height: 85%;
+   border-radius: 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 .content-container > .content-src {
@@ -92,13 +95,13 @@ p {
 }
 
 .modalContent {
-   /* background-color: white; */
-   background-color: green;
+   background-color: white;
+   border-radius: 8px;
    margin: auto;
    padding: 15px;
    width: 80%;
    height: 90%;
-
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
    overflow-y: scroll;
    position: relative;
 }
@@ -124,31 +127,32 @@ p {
 }
 
 .trending-header {
-   border-bottom: 1px solid black;
+   /* border-bottom: 1px solid black; */
    display: flex;
    margin: 10px;
    justify-content: space-between;
 }
 
 .trending-title {
-   border: 1px solid black;
+   /* border: 1px solid black; */
    margin: 0;
    display: flex;
    align-items: flex-end;
 }
 
 .trending-description {
-   border: 1px solid black;
+   /* border: 1px solid black; */
    display: flex;
    align-items: flex-end;
 }
 
 .trending-description p {
    margin: 0;
+   font-style: italic;
 }
 
 .trending-articles {
-   border: 1px solid violet;
+   /* border: 1px solid violet; */
    margin-bottom: 10px;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
@@ -158,12 +162,30 @@ p {
 .trending-articles > div {
    background-color: white;
    height: 250px;
+   border: px solid black;
+   border-radius: 5px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+   /* transition: padding 1s; */
+   /* 0 6px 20px 0 rgba(0, 0, 0, 0.3); */
 }
 
-.trending-articles > div:nth-child(even) {
+.trending-articles > div:hover {
+   /* background-color: white;
+   height: 250px;
+   border-radius: 5px; */
+   /* padding: 3px; */
+   width: 100%;
+   height: 100%;
+   /* z-index: 1; */
+   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+   /* transition: slide-fwd-center; */
+   /* 0 6px 20px 0 rgba(0, 0, 0, 0.8); */
+}
+
+/* .trending-articles > div:nth-child(even) {
    background-color: blueviolet;
    height: 250px;
-}
+} */
 
 .trending-feature {
    grid-column: 1/3;

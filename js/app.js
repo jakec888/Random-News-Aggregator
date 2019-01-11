@@ -17,10 +17,6 @@ $(() => {
       success: data => {
          // console.log(data);
 
-         // $(".jdata")
-         //    .removeData("article-data")
-         //    .data("article-data", data.articles[i]);
-
          for (let i = 0; i < 13; i++) {
             console.log(data.articles[i]);
 
@@ -42,8 +38,6 @@ $(() => {
                         $("<div>")
                            .css("width", "100%")
                            .css("height", "25%")
-                           // .css("border", "1px solid black")
-                           // .css("padding", "10px")
                            .append(
                               $("<h5>")
                                  .text("source: " + data.articles[i].source.name)
