@@ -1,6 +1,7 @@
+// tech
 $.ajax({
    url:
-      "https://newsapi.org/v2/top-headlines?country=us&apiKey=773d961a799d4cf9a09c2033e653e8b1",
+      "https://newsapi.org/v2/top-headlines?country=us&category=tech&apiKey=773d961a799d4cf9a09c2033e653e8b1",
    success: data => {
       // console.log(data);
 
@@ -8,12 +9,12 @@ $.ajax({
          console.log(data.articles[i]);
 
          if (i === 0) {
-            $(".business-articles").append(
+            $(".tech-articles").append(
                $("<div>")
                   .data("article-data", data.articles[i])
                   .css("width", "100%")
                   .css("height", "100%")
-                  .addClass("business-feature")
+                  .addClass("tech-feature")
                   .addClass("article")
                   .append(
                      $("<img>")
@@ -40,7 +41,7 @@ $.ajax({
                   )
             );
          } else {
-            $(".business-articles").append(
+            $(".tech-articles").append(
                $("<div>")
                   .data("article-data", data.articles[i])
                   .css("width", "100%")
@@ -68,7 +69,7 @@ $.ajax({
                   )
             );
          }
-         // $(".business-articles").append();
+         // $(".tech-articles").append();
          // Div Container: $("<div>").append() // .addClass()
          // Image: $("<img>").text(data.articles[i].urlToImage)
          // Title: $("<h4>").text(data.articles[i].title)
