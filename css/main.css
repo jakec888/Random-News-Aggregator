@@ -121,55 +121,275 @@ p {
 
 /* REUSE */
 
-.trending {
+.business {
    border-top: 1px solid grey;
    margin-bottom: 10px;
 }
 
-.trending-header {
+.business-header {
    display: flex;
    margin: 10px;
    justify-content: space-between;
 }
 
-.trending-title {
+.business-title {
    margin: 0;
    display: flex;
    align-items: flex-end;
 }
 
-.trending-description {
+.business-description {
    display: flex;
    align-items: flex-end;
 }
 
-.trending-description p {
+.business-description p {
    margin: 0;
    font-style: italic;
 }
 
-.trending-articles {
+.business-articles {
    margin-bottom: 10px;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    grid-gap: 10px;
 }
 
-.trending-articles > div {
+.business-articles > div {
    background-color: white;
    height: 250px;
    border-radius: 10px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
-.trending-articles > div:hover {
+.business-articles > div:hover {
    border-radius: 10px;
    width: 100%;
    height: 100%;
    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
 
-.trending-feature {
+.business-feature {
+   grid-column: 1/3;
+   grid-row: 1/3;
+}
+
+/* REUSE */
+
+.politics {
+   border-top: 1px solid grey;
+   margin-bottom: 10px;
+}
+
+.politics-header {
+   display: flex;
+   margin: 10px;
+   justify-content: space-between;
+}
+
+.politics-title {
+   margin: 0;
+   display: flex;
+   align-items: flex-end;
+}
+
+.politics-description {
+   display: flex;
+   align-items: flex-end;
+}
+
+.politics-description p {
+   margin: 0;
+   font-style: italic;
+}
+
+.politics-articles {
+   margin-bottom: 10px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 10px;
+}
+
+.politics-articles > div {
+   background-color: white;
+   height: 250px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.politics-articles > div:hover {
+   border-radius: 10px;
+   width: 100%;
+   height: 100%;
+   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.politics-feature {
+   grid-column: 1/3;
+   grid-row: 1/3;
+}
+
+/* REUSE */
+
+.technology {
+   border-top: 1px solid grey;
+   margin-bottom: 10px;
+}
+
+.technology-header {
+   display: flex;
+   margin: 10px;
+   justify-content: space-between;
+}
+
+.technology-title {
+   margin: 0;
+   display: flex;
+   align-items: flex-end;
+}
+
+.technology-description {
+   display: flex;
+   align-items: flex-end;
+}
+
+.technology-description p {
+   margin: 0;
+   font-style: italic;
+}
+
+.technology-articles {
+   margin-bottom: 10px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 10px;
+}
+
+.technology-articles > div {
+   background-color: white;
+   height: 250px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.technology-articles > div:hover {
+   border-radius: 10px;
+   width: 100%;
+   height: 100%;
+   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.technology-feature {
+   grid-column: 1/3;
+   grid-row: 1/3;
+}
+
+/* REUSE */
+
+.science {
+   border-top: 1px solid grey;
+   margin-bottom: 10px;
+}
+
+.science-header {
+   display: flex;
+   margin: 10px;
+   justify-content: space-between;
+}
+
+.science-title {
+   margin: 0;
+   display: flex;
+   align-items: flex-end;
+}
+
+.science-description {
+   display: flex;
+   align-items: flex-end;
+}
+
+.science-description p {
+   margin: 0;
+   font-style: italic;
+}
+
+.science-articles {
+   margin-bottom: 10px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 10px;
+}
+
+.science-articles > div {
+   background-color: white;
+   height: 250px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.science-articles > div:hover {
+   border-radius: 10px;
+   width: 100%;
+   height: 100%;
+   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.science-feature {
+   grid-column: 1/3;
+   grid-row: 1/3;
+}
+
+/* REUSE */
+
+.health {
+   border-top: 1px solid grey;
+   margin-bottom: 10px;
+}
+
+.health-header {
+   display: flex;
+   margin: 10px;
+   justify-content: space-between;
+}
+
+.health-title {
+   margin: 0;
+   display: flex;
+   align-items: flex-end;
+}
+
+.health-description {
+   display: flex;
+   align-items: flex-end;
+}
+
+.health-description p {
+   margin: 0;
+   font-style: italic;
+}
+
+.health-articles {
+   margin-bottom: 10px;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 10px;
+}
+
+.health-articles > div {
+   background-color: white;
+   height: 250px;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.health-articles > div:hover {
+   border-radius: 10px;
+   width: 100%;
+   height: 100%;
+   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.health-feature {
    grid-column: 1/3;
    grid-row: 1/3;
 }
