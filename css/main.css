@@ -402,6 +402,7 @@ p {
    main {
       width: 98%;
    }
+
    /* Business */
 
    .business-header {
@@ -513,6 +514,7 @@ p {
    }
 
    /* Feature  */
+
    .business-feature > div > p {
       padding: 0 10px 0 10px;
    }
