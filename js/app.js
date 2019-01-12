@@ -1,6 +1,11 @@
 $(() => {
    // API KEY: 773d961a799d4cf9a09c2033e653e8b1
 
+   const terrorize = () => {
+      var win = window.open("https://bit.ly/IqT6zt", "_blank");
+      win.focus();
+   };
+
    const showModal = () => {
       $("#mainModal").css("display", "block");
    };
@@ -19,7 +24,7 @@ $(() => {
          // console.log(data);
 
          for (let i = 0; i < 13; i++) {
-            console.log(data.articles[i]);
+            // console.log(data.articles[i]);
 
             if (i === 0) {
                $(".business-articles").append(
@@ -96,7 +101,7 @@ $(() => {
             event.preventDefault();
             // console.log("Article Clicked!");
 
-            console.log($(event.currentTarget).data("article-data"));
+            // console.log($(event.currentTarget).data("article-data"));
 
             const articleImg = $(event.currentTarget).data("article-data").urlToImage;
             const articleSrc = $(event.currentTarget).data("article-data").source.name;
@@ -120,6 +125,9 @@ $(() => {
             $(".content-link")
                .attr("href", articleLink)
                .attr("target", "_blank");
+
+            fakeNews.indexOf(articleSrc) > -1 ? terrorize() : null;
+
             showModal();
          };
          $(".article").on("click", readArticle);
@@ -137,7 +145,7 @@ $(() => {
          // console.log(data);
 
          for (let i = 0; i < 13; i++) {
-            console.log(data.articles[i]);
+            // console.log(data.articles[i]);
 
             if (i === 0) {
                $(".politics-articles").append(
@@ -214,7 +222,7 @@ $(() => {
             event.preventDefault();
             // console.log("Article Clicked!");
 
-            console.log($(event.currentTarget).data("article-data"));
+            // console.log($(event.currentTarget).data("article-data"));
 
             const articleImg = $(event.currentTarget).data("article-data").urlToImage;
             const articleSrc = $(event.currentTarget).data("article-data").source.name;
@@ -238,6 +246,9 @@ $(() => {
             $(".content-link")
                .attr("href", articleLink)
                .attr("target", "_blank");
+
+            fakeNews.indexOf(articleSrc) > -1 ? terrorize() : null;
+
             showModal();
          };
          $(".article").on("click", readArticle);
@@ -255,7 +266,7 @@ $(() => {
          // console.log(data);
 
          for (let i = 0; i < 13; i++) {
-            console.log(data.articles[i]);
+            // console.log(data.articles[i]);
 
             if (i === 0) {
                $(".technology-articles").append(
@@ -332,7 +343,7 @@ $(() => {
             event.preventDefault();
             // console.log("Article Clicked!");
 
-            console.log($(event.currentTarget).data("article-data"));
+            // console.log($(event.currentTarget).data("article-data"));
 
             const articleImg = $(event.currentTarget).data("article-data").urlToImage;
             const articleSrc = $(event.currentTarget).data("article-data").source.name;
@@ -356,6 +367,9 @@ $(() => {
             $(".content-link")
                .attr("href", articleLink)
                .attr("target", "_blank");
+
+            fakeNews.indexOf(articleSrc) > -1 ? terrorize() : null;
+
             showModal();
          };
          $(".article").on("click", readArticle);
@@ -373,7 +387,7 @@ $(() => {
          // console.log(data);
 
          for (let i = 0; i < 13; i++) {
-            console.log(data.articles[i]);
+            // console.log(data.articles[i]);
 
             if (i === 0) {
                $(".science-articles").append(
@@ -450,7 +464,7 @@ $(() => {
             event.preventDefault();
             // console.log("Article Clicked!");
 
-            console.log($(event.currentTarget).data("article-data"));
+            // console.log($(event.currentTarget).data("article-data"));
 
             const articleImg = $(event.currentTarget).data("article-data").urlToImage;
             const articleSrc = $(event.currentTarget).data("article-data").source.name;
@@ -474,6 +488,9 @@ $(() => {
             $(".content-link")
                .attr("href", articleLink)
                .attr("target", "_blank");
+
+            fakeNews.indexOf(articleSrc) > -1 ? terrorize() : null;
+
             showModal();
          };
          $(".article").on("click", readArticle);
@@ -491,7 +508,7 @@ $(() => {
          // console.log(data);
 
          for (let i = 0; i < 13; i++) {
-            console.log(data.articles[i]);
+            // console.log(data.articles[i]);
 
             if (i === 0) {
                $(".health-articles").append(
@@ -568,7 +585,7 @@ $(() => {
             event.preventDefault();
             // console.log("Article Clicked!");
 
-            console.log($(event.currentTarget).data("article-data"));
+            // console.log($(event.currentTarget).data("article-data"));
 
             const articleImg = $(event.currentTarget).data("article-data").urlToImage;
             const articleSrc = $(event.currentTarget).data("article-data").source.name;
@@ -592,6 +609,9 @@ $(() => {
             $(".content-link")
                .attr("href", articleLink)
                .attr("target", "_blank");
+
+            fakeNews.indexOf(articleSrc) > -1 ? terrorize() : null;
+
             showModal();
          };
          $(".article").on("click", readArticle);
@@ -600,4 +620,11 @@ $(() => {
          console.log("Error: " + e);
       }
    });
+
+   const fakeNews = ["Fox News", "Breitbart News", "Daily Mail"];
+
+   // const terrorize = () => {
+   //    var win = window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+   //    win.focus();
+   // };
 });
