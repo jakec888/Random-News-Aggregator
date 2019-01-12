@@ -9,7 +9,6 @@ $(() => {
    const showModal = () => {
       $("#mainModal").css("display", "block");
    };
-   // $("#myBtn").on("click", showModal);
 
    const hideModal = () => {
       $("#mainModal").css("display", "none");
