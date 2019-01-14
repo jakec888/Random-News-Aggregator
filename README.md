@@ -32,13 +32,13 @@ In computing, a news aggregator, also termed a feed aggregator, feed reader, new
 
 [Wiki](https://en.wikipedia.org/wiki/Technology)
 
-** 4: Science**
+** 4: Science **
 
 - Science is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe. The earliest roots of science can be traced to Ancient Egypt and Mesopotamia in around 3500 to 3000 BCE.
 
 [Wiki](https://en.wikipedia.org/wiki/Science)
 
-** 5: Health**
+** 5: Health **
 
 - Health, as defined by the World Health Organization, is "a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity." This definition has been subject to controversy, as it may have limited value for implementation.
 
