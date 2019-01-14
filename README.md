@@ -14,19 +14,19 @@ In computing, a news aggregator, also termed a feed aggregator, feed reader, new
 
 ## Top Read News Sources
 
-** 1: Business**
+** 1: Business **
 
 - Business is the activity of making one's living or making money by producing or buying and selling products (such as goods and services). Simply put, it is "any activity or enterprise entered into for profit.
 
 [Wiki](https://en.wikipedia.org/wiki/News_aggregator)
 
-** 2: Politics**
+** 2: Politics **
 
 - DescriptionPolitics is the process of making decisions that apply to members of a group. It refers to achieving and exercising positions of governance—organized control over a human community, particularly a state.
 
 [Wiki](https://en.wikipedia.org/wiki/Politics)
 
-** 3: Technology**
+** 3: Technology **
 
 - Technology is the collection of techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation.
 
