@@ -1,5 +1,9 @@
 # News Aggregate
 
+<p align="center">
+<img src="news.gif" />
+</p>
+
 ## What News Aggregator Are
 
 In computing, a news aggregator, also termed a feed aggregator, feed reader, news reader, RSS reader or simply aggregator, is client software or a web application which aggregates syndicated web content such as online newspapers, blogs, podcasts, and video blogs (vlogs) in one location for easy viewing. RSS is a synchronized subscription system. RSS uses extensible markup language (XML) to structure pieces of information to be aggregated in a feed reader that displays the information in a user-friendly interface. The updates distributed may include journal tables of contents, podcasts, videos, and news items.
